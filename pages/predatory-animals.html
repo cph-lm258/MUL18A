@@ -3,19 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Predatory Animals</title>
+	  <style>
+		  /*CSS kommentar: embedded style*/
+		  /*CSS selctor: HTML elementet table*/
+		  table{
+			  /*Property + value*/
+			  width: 800px;
+			  border-collapse: collapse;
+			  border: 1px solid black;
+		  }
+		  th,td{
+			  border: 1px solid black;
+			  padding:10px;
+		  }
+	  </style>
   </head>
 
-  <body>
+	<body>
+		<header>
+  <h1>Introduction to HTML 5</h1>
+</header>
+		<!--Navigation-->
+		<nav>
+		<a href="../index.html">Home</a>
+		<a href="#">Hello World</a>
+		<a href="https://www.cphbusiness.dk/" target="_blank">My School</a>
+		<a href="#">Tables</a>
+		<a href="contact.html">contact</a>
+	</nav>
+		
+		<!--Her skulle <caption></caption> være indsat i stedet for <header> og <p> elementet. Tableheader kunne også være brugt: <th></th>-->
 	  <header>
 		  <p align="center">The animal table
 	      </p>
 	  </header>
 	  
-	  <!--Tabel-->
-	  <table border="1" width="700" align="center">
+	  <!--Tabel--><!--Advarsel ført til slet af: border="1" Width="700" i tableelementet. Genskabt med CSS i stedet.-->
+	  <table align="center">
 		<thead colspan="3">
 		  <!--række 1--><!--Obs. indsæt th-table heading i stedet.-->
-		  <tr>
+		  <tr><!--Brug scope attribut i stedet for align. Hvis der bruges scope og den tillægges værdien "colgroup". Dermed er den header for the column, dvs. kolonnen.-->
 			<th colspan="3" align="center">
 			  <strong>Predatory animals</strong>
 			</th>
@@ -49,8 +76,8 @@
 				  </em>
 		    </td>
 			  <td width="233">
-				  <figure>
-					  <img src="!default/Brown bear.jpg" width="140" height="100" alt="A picture of a brown bear"/>
+				  <figure><!--obs. ingen mellemrum i billedefilens nav - det giver en htmlkode som måske ikke virker.-->
+					  <img src="../images/Brown bear.jpg" width="140" height="100" alt="A picture of a brown bear"/>
 					  <figcaption>Brown bear
 					  </figcaption>
 				  </figure>
@@ -66,8 +93,8 @@
 				  </em>
 			  </td>
 			  <td width="233">
-				  <figure>
-					  <img src="!default/Badger.jpg" width="132" height="100" alt=""/><figcaption>Badger
+				  <figure><!--Husk beskrivelse til billederne-->
+					  <img src="../images/Badger.jpg" width="132" height="100" alt="Picture of a Bagder"/><figcaption>Badger
 					  </figcaption>
 				  </figure>
 			  </td>
@@ -83,7 +110,7 @@
 			  </td>
 			  <td width="233">
 				  <figure>
-					  <img src="!default/Fox.jpg" width="149" height="100" alt=""/>
+					  <img src="../images/Fox.jpg" width="149" height="100" alt="Picture of a fox"/>
 					  <figcaption>Fox
 					  </figcaption>
 				  </figure>
@@ -100,7 +127,7 @@
 		    </td>
 			  <td width="233">
 				  <figure>
-					  <img src="!default/Sand cat.jpg" width="149" height="100" alt=""/>
+					  <img src="../images/Sand cat.jpg" width="149" height="100" alt="Picture of a Sand cat"/>
 					  <figcaption>Sand Cat
 					  </figcaption>
 				  </figure>
@@ -117,7 +144,7 @@
 			  </td>
 			  <td width="233">
 				  <figure>
-					  <img src="!default/Wild cat.jpg" width="122" height="100" alt=""/>
+					  <img src="../images/Wild cat.jpg" width="122" height="100" alt="Picture of a Wild cat"/>
 					  <figcaption>Wild cat
 					  </figcaption>
 				  </figure>
@@ -134,7 +161,7 @@
 			  </td>
 			  <td width="233">
 				  <figure>
-					  <img src="!default/Wolf.jpg" width="149" height="100" alt=""/>
+					  <img src="../images/Wolf.jpg" width="149" height="100" alt="Picture of a wolf"/>
 					  <figcaption>Wolf
 					  </figcaption>
 				  </figure>
