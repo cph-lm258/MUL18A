@@ -1,21 +1,99 @@
 <!doctype html>
 <html>
+	
 <head>
 <meta charset="utf-8">
 <title>contact</title>
+	<style>
+		/*layout*/
+		#container{
+			width: 80%;
+			min-height: 90vh;
+			margin: auto;
+			border: 1px solid black;
+		}
+		
+		#header{
+			border-bottom: 1px solid black;
+			padding: 10px;
+			text-align: center;
+			background-color: lightgrey;
+		}
+		
+		#nav{
+			border-bottom: 1px solid black;
+			padding: 10px;
+		}
+		
+		#main{
+			padding: 10px;
+		}
+		
+		/*Forms styles*/
+		form{
+			width:40vw;
+			margin:20px auto;
+			border:1px solid black;
+			padding:20px;
+		}
+	</style>
 </head>
 
 <body>
-	<header>
-  <h1>Introduction to HTML 5</h1>
-</header>
-	<!--Navigation-->
-		<nav>
+	<!--Main layout container-->
+	<div id="container">
+		<div id="header">
+			<header><!--Overskrift på siden-->
+				<h1>Contact me!</h1>
+			</header>
+		</div>
+		<div id="nav">
+			<!--Navigation-->
+	<nav>
 		<a href="../index.html">Home</a>
 		<a href="#">Hello World</a>
 		<a href="https://www.cphbusiness.dk/" target="_blank">My School</a>
 		<a href="predatory-animals.html">Tables</a>
 		<a href="#">contact</a>
 	</nav>
+		</div>
+		
+		<div id="main">
+			<!--Webform-->
+	<form action="mailto:eksistererikke@live.dk" method="post" enctype="text/plain">
+		<p>
+			<label>Your Name</label>
+		</p>
+		<p><!--Nedenstående er en tekstboks til at indtaste sit navn i. Der er også autofocus, som gør at feltet allerede er markeret og klar til indtastning.-->
+			<input type="text" name="name" placeholder="Type your name.." autofocus required>
+		</p>
+		<p>
+			<label>Your Email</label>
+		</p>
+		<p><!--Nedenstående er en tekstboks til indtastning af en email adresse. Den tjekker rent faktisk om der er et @ i teksten.-->
+			<input type="email" name="email" placeholder="Type a valid e-mail address.."  autofocus required>
+		</p>
+		<!--Nedenstående er en knap-->
+	    <input type="submit" value="Submit Form">
+		<p>
+			<label>Your Message:</label>
+		</p>
+		<p>
+			<textarea name="comment" placeholder="Your message..">
+			</textarea>
+		</p>
+		<p>
+		    I love this!<input type="radio" name="love">
+		</p>
+		<p>I hate this!<input type="radio" name="hate">
+		</p>
+		<!--check knap mangler, indsæt senere-->
+			<input type="submit" value="submit form">
+	</form>
+		</div>
+		
+		<div id="footer"></div>
+	</div>
+	
 </body>
 </html>
